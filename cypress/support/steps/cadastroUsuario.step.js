@@ -19,11 +19,15 @@ When('confirmar operação', () => {
     paginaCadastro.clickButtonCadastrar();
 });
 Then('o usuário deverá ser cadastrado', () => {
+    
     paginaCadastro.getUsuarioCadastrado();
 });
 
 //conseguir criar um usuário válido com 100 caracteres no nome//////
-When('informar um novo nome com 100 caracteres',()=>{});
+When('informar um novo nome com 100 caracteres',()=>{
+
+});
+
 //conseguir criar um usuário válido com 60 caracteres no e-mail/////
 When('informar um novo e-mail com 60 caracteres',()=>{});
 

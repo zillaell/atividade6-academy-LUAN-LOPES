@@ -61,7 +61,7 @@ Cenário: não deve ser possível cadastrar um usuário sem preencher o campo de
 Cenário: Não deve ser possível cadastrar um usuário ao preencher o campo de email de formato inválido
   Dado que acessei a funcionalidade de atualizar usuario
   Quando informar um novo nome
-  E informar um novo e-mail de formato inválido
+  E informar um novo e-mail de formato inválido "<email>"
   E confirmar operação
   Então  não deve ser possível atualizar o usuário
   Exemplos:
