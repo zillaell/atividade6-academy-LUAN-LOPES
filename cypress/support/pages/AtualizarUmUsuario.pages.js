@@ -6,16 +6,21 @@ export default class AtualizarUsuarioPage {
     buttonSalvar = '.sc-kpDqfm.dGvNqp .sc-dAlyuH.jdAtLn';
 
     typeEmail(email) {
-        cy.get(this.inputNomeOuEmail).type(email);
+        cy.get(this.inputName).type(email);
     }
     typeNome(nome) {
-        cy.get(this.inputNomeOuEmail).type(nome);
+        cy.get(this.inputEmail).type(nome);
     }
-    clickButtonEditar(){
-        cy.get(this.buttonEditar).click();
+    clickEditar() {
+        return cy.get(this.buttonEditar).click();
     }
-    clickButtonSalvar(){
+    clickSalvar() {
         cy.get(this.buttonSalvar).click();
+    }
+    editar(email, nome) {
+        this.typeEmail(email);
+        this.typeNome(nome);
+        this.clickEditar();
     }
 
     // ao tentar cadastrar um usuario com email já em uso

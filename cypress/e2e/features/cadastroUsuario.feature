@@ -48,14 +48,14 @@ Cenário: não deve ser possível cadastrar um usuário com mais de 60 caractere
 # // não deve ser possível cadastrar um usuário sem preencher o campo de email////
 Cenário: não deve ser possível cadastrar um usuário sem preencher o campo de email
   Dado que acessei a funcionalidade de cadastro
-  Quando informar um novo nome
+  Quando informar somente o novo nome
   E confirmar operação
   Então  não deve ser possível cadastrar o usuário
 
 # // não deve ser possível cadastrar um usuário sem preencher o campo de nome ////
 Cenário: não deve ser possível cadastrar um usuário sem preencher o campo de nome 
   Dado que acessei a funcionalidade de cadastro
-  Quando informar um novo e-mail
+  Quando informar somente o novo e-mail
   E confirmar operação
   Então  não deve ser possível cadastrar o usuário
 
